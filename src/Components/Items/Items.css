@@ -1,0 +1,23 @@
+.Card{
+    border: 2px solid steelblue;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 10px;
+  }
+  
+  .Image{
+    height: 250px;
+    width: 250px;
+  }
+  
+  h2{
+    color: crimson;
+  }
+  
+  p{
+    margin: 10px auto;
+  }
+  
+  .Description{
+    color: grey;
+  }
