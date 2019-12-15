@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-auction/static/css/main.a4df57c9.chunk.css",
-    "main.js": "/react-auction/static/js/main.397211fc.chunk.js",
-    "main.js.map": "/react-auction/static/js/main.397211fc.chunk.js.map",
+    "main.css": "/react-auction/static/css/main.71cf58f6.chunk.css",
+    "main.js": "/react-auction/static/js/main.8d45cbd1.chunk.js",
+    "main.js.map": "/react-auction/static/js/main.8d45cbd1.chunk.js.map",
     "runtime-main.js": "/react-auction/static/js/runtime-main.c0664e15.js",
     "runtime-main.js.map": "/react-auction/static/js/runtime-main.c0664e15.js.map",
-    "static/js/2.fd455b88.chunk.js": "/react-auction/static/js/2.fd455b88.chunk.js",
-    "static/js/2.fd455b88.chunk.js.map": "/react-auction/static/js/2.fd455b88.chunk.js.map",
+    "static/js/2.f9b36a42.chunk.js": "/react-auction/static/js/2.f9b36a42.chunk.js",
+    "static/js/2.f9b36a42.chunk.js.map": "/react-auction/static/js/2.f9b36a42.chunk.js.map",
     "index.html": "/react-auction/index.html",
-    "precache-manifest.f5dafa5a2ad232308db0154a9b299f64.js": "/react-auction/precache-manifest.f5dafa5a2ad232308db0154a9b299f64.js",
+    "precache-manifest.5b47013701f3d446b5979e9f82b6700c.js": "/react-auction/precache-manifest.5b47013701f3d446b5979e9f82b6700c.js",
     "service-worker.js": "/react-auction/service-worker.js",
-    "static/css/main.a4df57c9.chunk.css.map": "/react-auction/static/css/main.a4df57c9.chunk.css.map",
-    "static/js/2.fd455b88.chunk.js.LICENSE": "/react-auction/static/js/2.fd455b88.chunk.js.LICENSE"
+    "static/css/main.71cf58f6.chunk.css.map": "/react-auction/static/css/main.71cf58f6.chunk.css.map",
+    "static/js/2.f9b36a42.chunk.js.LICENSE": "/react-auction/static/js/2.f9b36a42.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.c0664e15.js",
-    "static/js/2.fd455b88.chunk.js",
-    "static/css/main.a4df57c9.chunk.css",
-    "static/js/main.397211fc.chunk.js"
+    "static/js/2.f9b36a42.chunk.js",
+    "static/css/main.71cf58f6.chunk.css",
+    "static/js/main.8d45cbd1.chunk.js"
   ]
 }
