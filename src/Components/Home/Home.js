@@ -22,17 +22,12 @@ const Home = (props) => {
       start();
     },[]);
 
-    // const clickHandler = (i) => {
-      // console.log(i);
-    // }
-
     return (
         data.map((item) => {
           return (<Link key={item._id} to={'/react-auction/items/' + item._id}>
                       <Items  
                         name={item.name}
                         image={item.image}
-                        // clicked={()=> clickHandler(item._id)}
                         ></Items></Link>)
         })
     );

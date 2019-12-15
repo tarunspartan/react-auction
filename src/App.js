@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
@@ -7,27 +7,47 @@ import Signup from '../src/Components/Signup/Signup';
 import Login from '../src/Components/Login/Login';
 import Item from '../src/Components/Item/Item';
 
-function App() {
+const App = (props) => {
 
-  const [isLoggedIn,setLogin] = useState(true);
+  const [isLoggedIn,setLogin] = useState(false);
 
+  useEffect(()=>{
+    if(!localStorage.getItem('auctionUser')){
+      setLogin(false);
+    }else{
+      setLogin(true)
+    }
+  },[isLoggedIn])
+
+  const sideMenuHandler = () => {
+    const sidemenu = document.getElementById('sidemenu');
+    sidemenu.classList.length === 1 ? sidemenu.classList.add('active') : sidemenu.classList.remove('active');
+    const sidemenuicon = document.getElementById('sidemenuicon');
+    sidemenuicon.classList.length === 2 ? sidemenuicon.classList.remove('active') && sidemenu.classList.add('sideDiv')  : sidemenuicon.classList.add('active') && sidemenu.classList.add('sideDiv');
+  }
+
+  const logoutHandler = () => {
+    localStorage.removeItem('auctionUser');
+    localStorage.clear();
+
+  }
 
   return (
     <BrowserRouter>
         <div className="App">
           <nav>
-            <Link to='/'>Home</Link>
+            <Link to='/react-auction/'>Home</Link>
             <ul>
-                { isLoggedIn ? <li><Link to='/react-auction/login'>Login</Link></li> : null }
-                <li><Link to='/react-auction/signup'>Signup</Link></li>
+                {isLoggedIn ? null : <li><Link to='/react-auction/login'>Login</Link></li>}
             </ul>
-            <div className='container'>
+            <div onClick={sideMenuHandler} id='sidemenuicon' className='container'>
             <div></div>
             <div></div>
             <div></div>
             <div></div>
             </div>
           </nav>
+          <div id='sidemenu' className='sideDiv'><p onClick={logoutHandler}>Logout</p></div>
           <Route path='/react-auction/' exact component={Home}/>
           <Route path='/react-auction/login' exact component={Login}/>
           <Route path='/react-auction/signup' exact component={Signup}/>
