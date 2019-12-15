@@ -18,8 +18,8 @@ function App() {
           <nav>
             <Link to='/'>Home</Link>
             <ul>
-                { isLoggedIn ? <li><Link to='/login'>Login</Link></li> : null }
-                <li><Link to='/signup'>Signup</Link></li>
+                { isLoggedIn ? <li><Link to='/react-auction/login'>Login</Link></li> : null }
+                <li><Link to='/react-auction/signup'>Signup</Link></li>
             </ul>
             <div className='container'>
             <div></div>
@@ -28,10 +28,10 @@ function App() {
             <div></div>
             </div>
           </nav>
-          <Route path='/' exact component={Home}/>
-          <Route path='/login' exact component={Login}/>
-          <Route path='/signup' exact component={Signup}/>
-          <Route path='/items/:id' exact component={Item}/>
+          <Route path='/react-auction/' exact component={Home}/>
+          <Route path='/react-auction/login' exact component={Login}/>
+          <Route path='/react-auction/signup' exact component={Signup}/>
+          <Route path='/react-auction/items/:id' exact component={Item}/>
         </div>
         </BrowserRouter>
   );

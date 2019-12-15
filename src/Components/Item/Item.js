@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useDebugValue} from 'react';
+import React, {useEffect, useState} from 'react';
 import './Item.css';
 import axios from 'axios';
 
