@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b006601a18652b05ad5c2de9ccf2ac7",
+    "revision": "115c44391dbedd84acd7f6300d846a7c",
     "url": "/react-auction/index.html"
   },
   {
-    "revision": "4a5d056642b1d287ad12",
+    "revision": "86f46d2bf033945d45b0",
     "url": "/react-auction/static/css/main.a4df57c9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-auction/static/js/2.fd455b88.chunk.js.LICENSE"
   },
   {
-    "revision": "4a5d056642b1d287ad12",
-    "url": "/react-auction/static/js/main.83affd0a.chunk.js"
+    "revision": "86f46d2bf033945d45b0",
+    "url": "/react-auction/static/js/main.397211fc.chunk.js"
   },
   {
     "revision": "797b6256f01868edef77",
