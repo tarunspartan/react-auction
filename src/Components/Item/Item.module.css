@@ -1,0 +1,14 @@
+.Image{
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+
+.backIcon > img{
+  height: 30px;
+  width: 30px;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(218, 218, 218);
+  border-radius: 50%;
+}

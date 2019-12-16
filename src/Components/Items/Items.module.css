@@ -3,21 +3,17 @@
     border-radius: 10px;
     margin: 10px 10px;
     padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
   
   .Image{
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
   }
   
   h2{
     color: crimson;
-  }
-  
-  p{
-    margin: 10px auto;
-  }
-  
-  .Description{
-    color: grey;
   }

@@ -1,15 +1,13 @@
 import React,{useEffect, useState} from 'react';
-import './Home.css';
+// import styles from './Home.module.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 import Items from '../Items/Items';
 
-
 const Home = (props) => {
 
     const [data,setData] = useState([]);
-
     const start = () => {
       axios.get('https://react-auction-server.herokuapp.com/sell')
       .then((response) => {

@@ -1,0 +1,32 @@
+.Main {
+    text-align: center;
+}
+
+input{
+    border: 3px solid steelblue;
+    height: 50px;
+    width: 300px;
+    margin: 15px;
+    font-size: 25px;
+}
+
+button{
+    border: 1px solid steelblue;
+    background-color: steelblue;
+    color: #ffffff;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+span{
+    color: salmon;
+    cursor: pointer;
+}
+
+.Main p{
+    font-size: 18px;
+    font-weight: 500;
+}

@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import './Login.css';
+import styles from './Login.module.css';
 import axios from 'axios';
 
 const Login = (props) => {
 
     const [input, setInput] = useState('');
     const [password, setPassword] = useState('');
-
     const loginHandler = () => {
         axios.post('https://react-auction-server.herokuapp.com/signin',{mail:input,password:password})
         .then((response) => {
@@ -28,10 +27,16 @@ const Login = (props) => {
         setPassword(event.target.value)
     }
 
+    const signupHandler = () => {
+        props.history.push({pathname : '/react-auction/signup'});
+    }
+
     return (
-        <div className='Main'>
-            <input type='text' placeholder="Email" value={input} onChange={getInputHandler} required></input><br></br>                <input type='password' placeholder="Password" value={password} onChange={getPasswordHandler} required></input><br></br>
+        <div className={styles.Main}>
+            <input type='email' placeholder="Email" value={input} onChange={getInputHandler} required></input><br></br>                <input type='password' placeholder="Password" value={password} onChange={getPasswordHandler} required></input><br></br>
             <button onClick={loginHandler}>Login</button>
+            {/* <button >Signup</button> */}
+            <p>Don't have an account one? <span onClick={signupHandler}>Signup here..</span></p>
             </div>
     );
     
