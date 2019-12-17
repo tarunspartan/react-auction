@@ -1,0 +1,19 @@
+.ell {
+    text-align: center;
+}
+
+select {
+    border: 3px solid steelblue;
+    height: 50px;
+    width: 300px;
+    margin: 15px;
+    font-size: 25px;
+}
+textarea{
+    border: 3px solid steelblue;
+    /* height: 50px;
+    width: 300px; */
+    margin: 15px;
+    font-size: 25px;
+}
+

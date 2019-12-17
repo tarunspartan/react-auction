@@ -67,9 +67,9 @@ a{
   width: 30%;
   height: 100vh;
   background-color: #262626;
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: 0;
+  bottom: 0;
   transform: translateX(-100%);
   transition: 100ms;
   padding-top: 50px;

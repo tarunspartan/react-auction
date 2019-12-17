@@ -10,7 +10,7 @@ const Login = (props) => {
         axios.post('https://react-auction-server.herokuapp.com/signin',{mail:input,password:password})
         .then((response) => {
             if(response.data.status !== 'OK'){
-                console.error('Authentication Failed')
+                alert('Authentication Failed')
             }else{
                 localStorage.setItem('auctionUser',input);
                 props.history.push({pathname : '/react-auction/'});
@@ -33,7 +33,8 @@ const Login = (props) => {
 
     return (
         <div className={styles.Main}>
-            <input type='email' placeholder="Email" value={input} onChange={getInputHandler} required></input><br></br>                <input type='password' placeholder="Password" value={password} onChange={getPasswordHandler} required></input><br></br>
+            <input type='email' placeholder="Email" value={input} onChange={getInputHandler} required></input><br></br>                
+            <input type='password' placeholder="Password" value={password} onChange={getPasswordHandler} required></input><br></br>
             <button onClick={loginHandler}>Login</button>
             {/* <button >Signup</button> */}
             <p>Don't have an account one? <span onClick={signupHandler}>Signup here..</span></p>
